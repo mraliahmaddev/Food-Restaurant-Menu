@@ -44,7 +44,7 @@ let total = Math.floor(subTotal + deliveryCharges + taxes)
                 Categories.map((item,i) => (
                   <div key={i} className='bg-white rounded-md cursor-pointer'>
 
-                    <div  onClick={()=> filter(item.name)} className={`flex justify-center items-center flex-col-reverse  w-[110px] h-[115px] font-medium shadow-xl rounded-md hover:bg-green-200 duration-300 ${activeCategory === item.name ? " bg-green-200" : "bg-none"}` }>
+                    <div  onClick={()=> filter(item.name)} className={`flex justify-center items-center flex-col-reverse  w-[110px] h-[115px] max-sm:w-[80px] text-center max-sm:h-[95px] font-medium shadow-xl rounded-md hover:bg-green-200 max-sm:text-md duration-300 ${activeCategory === item.name ? " bg-green-200" : "bg-none"}` }>
                         {item.name}
                         {item.icon}
                     </div>
@@ -56,7 +56,7 @@ let total = Math.floor(subTotal + deliveryCharges + taxes)
            
         <div className='flex justify-center w-full h-full'>
           {cate.length > 0 ? 
-            <div className='w-[80%] h-full flex flex-wrap justify-center gap-4 my-7 '>
+            <div className='w-[80%] max-sm:w-full h-full flex flex-wrap justify-center gap-4 my-7 '>
               {
                   cate.map((items,i) =>(
                     <Products key={i} name={items.food_name} image={items.food_image} price={items.price} qty={items.food_quantity} id={items.id} type={items.food_type}/>
