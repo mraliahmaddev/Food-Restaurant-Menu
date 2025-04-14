@@ -14,7 +14,7 @@ const dispatch = useDispatch()
     
   return (
     
-        <div className='w-[250px]  h-[350px] max-sm:w-[180px]  max-sm:h-[290px] max-sm:grid-cols-2 gap-2 shadow-md hover:scale-102 transition-all duration-300  shadow-green-500 bg-white p-2 rounded-md flex flex-col justify-between'>
+        <div className='w-[250px]  h-[370px] max-sm:w-[180px]  max-sm:h-[290px] max-sm:grid-cols-2 gap-2 shadow-md hover:scale-102 transition-all duration-300  shadow-green-500 bg-white p-2 rounded-md flex flex-col justify-between'>
 
         
             <div className='w-full h-full'>
