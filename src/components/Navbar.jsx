@@ -28,7 +28,7 @@ function Navbar() {
         </div>
 
         <form onSubmit={(e)=> e.preventDefault()} className='w-[60%] bg-white relative h-15 flex items-center shadow-xl rounded-md'>
-            <input  onChange={(e)=> setInput(e.target.value) } value={input} type="text" placeholder='search items...' className='w-full outline-none p-4'/>
+            <input  onChange={(e)=> setInput(e.target.value.toLowerCase()) } value={input} type="text" placeholder='search items...' className='w-full outline-none p-4'/>
             <FaSearch className='absolute right-5 text-2xl text-green-500'/>
         </form>
 
